@@ -9,6 +9,20 @@
   </head>
 
   <body>
+    <header>
+      <nav>
+    		<div class="container-fluid">
+          <%= image_tag("Food-Show-Logo-1.png", alt: "Food Club logo", class: "logo") %>
+    			<ul class="main-nav js--main-nav">
+    				<li><%= link_to "Home",     '#' %></li>
+            <li><%= link_to "About",    '#' %></li>
+            <li><%= link_to "Service",  '#' %></li>
+            <li><%= link_to "Blog",     '#' %></li>
+            <li><%= link_to "Contacts", '#' %></li>
+          </ul>
+    		</div>
+    	</nav>
+    </header>
     <%= yield %>
   </body>
 </html>
